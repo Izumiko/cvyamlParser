@@ -4,6 +4,10 @@ mex/build
 mex/Release
 mex/Debug
 
+[Bb]uild
+[Rr]elease
+[Dd]ebug
+
 *.o
 *.obj
 

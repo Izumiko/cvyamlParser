@@ -45,6 +45,20 @@ mex -v COMPFLAGS="$COMPFLAGS /std:c++17" COPTIMFLAGS="-O3 -fwrapv -DNDEBUG" ../s
 
 If mex was successful a verbose message will be printed in the console. Additionally use the provede genMex function.
 
+### 2(alternative): use CMake to build the mex
+
+```bash
+cmake -S . -B mex/Build
+cmake --build mex/Build --config Release
+```
+
+On Windows:
+
+```bat
+cmake -G "Visual Studio 17 2022" -S . -B mex/Build
+cmake --build mex/Build --config Release
+```
+
 ### 3: add mex path to matlab path variable:
 
 You do this the easiest by navigating to mex folder and calling:
